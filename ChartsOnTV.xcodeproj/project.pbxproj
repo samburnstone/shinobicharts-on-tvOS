@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27269BE61CAE82B500FF2A06 /* ShinobiCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27269BE51CAE82B500FF2A06 /* ShinobiCharts.framework */; };
 		279AF1621CAE797200C2E0C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279AF1611CAE797200C2E0C0 /* AppDelegate.swift */; };
 		279AF1641CAE797200C2E0C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279AF1631CAE797200C2E0C0 /* ViewController.swift */; };
 		279AF1671CAE797200C2E0C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279AF1651CAE797200C2E0C0 /* Main.storyboard */; };
 		279AF1691CAE797200C2E0C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279AF1681CAE797200C2E0C0 /* Assets.xcassets */; };
 		279AF1731CAE79F900C2E0C0 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 279AF1721CAE79F900C2E0C0 /* libc++.tbd */; };
-		279AF1751CAE7A8600C2E0C0 /* ShinobiCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 279AF1741CAE7A8600C2E0C0 /* ShinobiCharts.framework */; };
 		279AF1771CAE7BD200C2E0C0 /* ChartDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279AF1761CAE7BD200C2E0C0 /* ChartDatasource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27269BE51CAE82B500FF2A06 /* ShinobiCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShinobiCharts.framework; path = ../ShinobiCharts.framework; sourceTree = "<group>"; };
 		279AF15E1CAE797200C2E0C0 /* ChartsOnTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartsOnTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		279AF1611CAE797200C2E0C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		279AF1631CAE797200C2E0C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,7 +25,6 @@
 		279AF1681CAE797200C2E0C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		279AF16A1CAE797200C2E0C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		279AF1721CAE79F900C2E0C0 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		279AF1741CAE7A8600C2E0C0 /* ShinobiCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShinobiCharts.framework; sourceTree = "<group>"; };
 		279AF1761CAE7BD200C2E0C0 /* ChartDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartDatasource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -33,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				279AF1751CAE7A8600C2E0C0 /* ShinobiCharts.framework in Frameworks */,
+				27269BE61CAE82B500FF2A06 /* ShinobiCharts.framework in Frameworks */,
 				279AF1731CAE79F900C2E0C0 /* libc++.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27269BDD1CAE7F8400FF2A06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				279AF1721CAE79F900C2E0C0 /* libc++.tbd */,
+				27269BE51CAE82B500FF2A06 /* ShinobiCharts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		279AF1551CAE797200C2E0C0 = {
 			isa = PBXGroup;
 			children = (
@@ -60,8 +69,7 @@
 		279AF1601CAE797200C2E0C0 /* ChartsOnTV */ = {
 			isa = PBXGroup;
 			children = (
-				279AF1721CAE79F900C2E0C0 /* libc++.tbd */,
-				279AF1741CAE7A8600C2E0C0 /* ShinobiCharts.framework */,
+				27269BDD1CAE7F8400FF2A06 /* Frameworks */,
 				279AF1611CAE797200C2E0C0 /* AppDelegate.swift */,
 				279AF1631CAE797200C2E0C0 /* ViewController.swift */,
 				279AF1761CAE7BD200C2E0C0 /* ChartDatasource.swift */,
