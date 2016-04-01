@@ -13,6 +13,7 @@
 		279AF1691CAE797200C2E0C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279AF1681CAE797200C2E0C0 /* Assets.xcassets */; };
 		279AF1731CAE79F900C2E0C0 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 279AF1721CAE79F900C2E0C0 /* libc++.tbd */; };
 		279AF1751CAE7A8600C2E0C0 /* ShinobiCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 279AF1741CAE7A8600C2E0C0 /* ShinobiCharts.framework */; };
+		279AF1771CAE7BD200C2E0C0 /* ChartDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279AF1761CAE7BD200C2E0C0 /* ChartDatasource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		279AF16A1CAE797200C2E0C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		279AF1721CAE79F900C2E0C0 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		279AF1741CAE7A8600C2E0C0 /* ShinobiCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShinobiCharts.framework; sourceTree = "<group>"; };
+		279AF1761CAE7BD200C2E0C0 /* ChartDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartDatasource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				279AF1741CAE7A8600C2E0C0 /* ShinobiCharts.framework */,
 				279AF1611CAE797200C2E0C0 /* AppDelegate.swift */,
 				279AF1631CAE797200C2E0C0 /* ViewController.swift */,
+				279AF1761CAE7BD200C2E0C0 /* ChartDatasource.swift */,
 				279AF1651CAE797200C2E0C0 /* Main.storyboard */,
 				279AF1681CAE797200C2E0C0 /* Assets.xcassets */,
 				279AF16A1CAE797200C2E0C0 /* Info.plist */,
@@ -141,6 +144,7 @@
 			files = (
 				279AF1641CAE797200C2E0C0 /* ViewController.swift in Sources */,
 				279AF1621CAE797200C2E0C0 /* AppDelegate.swift in Sources */,
+				279AF1771CAE7BD200C2E0C0 /* ChartDatasource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
