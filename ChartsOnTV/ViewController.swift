@@ -34,10 +34,17 @@ class ViewController: UIViewController
     {
         super.viewDidLoad()
         
-        let chart = ShinobiChart(frame: view.bounds)
-        chart.datasource = datasource
+        view.backgroundColor = UIColor(red:0.30, green:0.33, blue:0.40, alpha:1.00)
         
+        chart.datasource = datasource
         view.addSubview(chart)
+        
+        chart.translatesAutoresizingMaskIntoConstraints = false
+        
+        chart.leftAnchor.constraintEqualToAnchor(view.leftAnchor).active = true
+        chart.topAnchor.constraintEqualToAnchor(view.topAnchor).active = true
+        chart.rightAnchor.constraintEqualToAnchor(view.rightAnchor).active = true
+        chart.bottomAnchor.constraintEqualToAnchor(view.bottomAnchor).active = true
     }
 
 }
