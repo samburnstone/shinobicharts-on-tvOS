@@ -8,18 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
+class ViewController: UIViewController
+{
+    // Datasource is not retained by chart... therefore need to keep a reference to it ourself
+    let datasource = ChartDatasource()
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let chart = ShinobiChart(frame: view.bounds)
+        chart.datasource = datasource
+        
+        view.addSubview(chart)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
