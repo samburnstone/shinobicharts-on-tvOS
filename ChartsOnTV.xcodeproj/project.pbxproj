@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2723AD151CAE8CBC005D7FDE /* ShinobiCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2723AD141CAE8CBC005D7FDE /* ShinobiCharts.framework */; };
 		27269BE31CAE805600FF2A06 /* Series+Styling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27269BE21CAE805600FF2A06 /* Series+Styling.swift */; };
-		27269BE61CAE82B500FF2A06 /* ShinobiCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27269BE51CAE82B500FF2A06 /* ShinobiCharts.framework */; };
 		279AF1621CAE797200C2E0C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279AF1611CAE797200C2E0C0 /* AppDelegate.swift */; };
 		279AF1641CAE797200C2E0C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279AF1631CAE797200C2E0C0 /* ViewController.swift */; };
 		279AF1671CAE797200C2E0C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279AF1651CAE797200C2E0C0 /* Main.storyboard */; };
@@ -18,8 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2723AD141CAE8CBC005D7FDE /* ShinobiCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShinobiCharts.framework; sourceTree = SOURCE_ROOT; };
 		27269BE21CAE805600FF2A06 /* Series+Styling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Series+Styling.swift"; sourceTree = "<group>"; };
-		27269BE51CAE82B500FF2A06 /* ShinobiCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShinobiCharts.framework; path = ../ShinobiCharts.framework; sourceTree = "<group>"; };
 		279AF15E1CAE797200C2E0C0 /* ChartsOnTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartsOnTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		279AF1611CAE797200C2E0C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		279AF1631CAE797200C2E0C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27269BE61CAE82B500FF2A06 /* ShinobiCharts.framework in Frameworks */,
+				2723AD151CAE8CBC005D7FDE /* ShinobiCharts.framework in Frameworks */,
 				279AF1731CAE79F900C2E0C0 /* libc++.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,8 +46,8 @@
 		27269BDD1CAE7F8400FF2A06 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2723AD141CAE8CBC005D7FDE /* ShinobiCharts.framework */,
 				279AF1721CAE79F900C2E0C0 /* libc++.tbd */,
-				27269BE51CAE82B500FF2A06 /* ShinobiCharts.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -273,6 +273,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ChartsOnTV",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ChartsOnTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -290,6 +291,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ChartsOnTV",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ChartsOnTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -318,6 +320,7 @@
 				279AF16F1CAE797200C2E0C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
