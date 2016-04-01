@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27269BE31CAE805600FF2A06 /* Series+Styling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27269BE21CAE805600FF2A06 /* Series+Styling.swift */; };
 		27269BE61CAE82B500FF2A06 /* ShinobiCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27269BE51CAE82B500FF2A06 /* ShinobiCharts.framework */; };
 		279AF1621CAE797200C2E0C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279AF1611CAE797200C2E0C0 /* AppDelegate.swift */; };
 		279AF1641CAE797200C2E0C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279AF1631CAE797200C2E0C0 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27269BE21CAE805600FF2A06 /* Series+Styling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Series+Styling.swift"; sourceTree = "<group>"; };
 		27269BE51CAE82B500FF2A06 /* ShinobiCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShinobiCharts.framework; path = ../ShinobiCharts.framework; sourceTree = "<group>"; };
 		279AF15E1CAE797200C2E0C0 /* ChartsOnTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartsOnTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		279AF1611CAE797200C2E0C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +52,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		27269BE41CAE80C800FF2A06 /* Styling */ = {
+			isa = PBXGroup;
+			children = (
+				27269BE21CAE805600FF2A06 /* Series+Styling.swift */,
+			);
+			name = Styling;
+			sourceTree = "<group>";
+		};
 		279AF1551CAE797200C2E0C0 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +83,7 @@
 				279AF1611CAE797200C2E0C0 /* AppDelegate.swift */,
 				279AF1631CAE797200C2E0C0 /* ViewController.swift */,
 				279AF1761CAE7BD200C2E0C0 /* ChartDatasource.swift */,
+				27269BE41CAE80C800FF2A06 /* Styling */,
 				279AF1651CAE797200C2E0C0 /* Main.storyboard */,
 				279AF1681CAE797200C2E0C0 /* Assets.xcassets */,
 				279AF16A1CAE797200C2E0C0 /* Info.plist */,
@@ -152,6 +163,7 @@
 			files = (
 				279AF1641CAE797200C2E0C0 /* ViewController.swift in Sources */,
 				279AF1621CAE797200C2E0C0 /* AppDelegate.swift in Sources */,
+				27269BE31CAE805600FF2A06 /* Series+Styling.swift in Sources */,
 				279AF1771CAE7BD200C2E0C0 /* ChartDatasource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

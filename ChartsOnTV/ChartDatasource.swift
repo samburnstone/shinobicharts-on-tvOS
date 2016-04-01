@@ -31,7 +31,7 @@ class ChartDatasource: NSObject, SChartDatasource
     func sChart(chart: ShinobiChart, seriesAtIndex index: Int) -> SChartSeries
     {
         let series = SChartColumnSeries()
-        
+        series.applyStyling()
         return series;
     }
     
