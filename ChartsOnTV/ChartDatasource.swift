@@ -20,8 +20,7 @@ class ChartDatasource: NSObject, SChartDatasource
                           ProgrammingLanguage(name: "C#", popularity: 8.8),
                           ProgrammingLanguage(name: "C++", popularity: 7.5),
                           ProgrammingLanguage(name: "C", popularity: 7.4),
-                          ProgrammingLanguage(name: "C#", popularity: 8.8),
-                          ProgrammingLanguage(name: "Other", popularity: 22.1)]
+                          ProgrammingLanguage(name: "Other", popularity: 26.9)]
     
     func numberOfSeriesInSChart(chart: ShinobiChart) -> Int
     {
