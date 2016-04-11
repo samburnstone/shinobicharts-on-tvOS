@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		2723AD151CAE8CBC005D7FDE /* ShinobiCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2723AD141CAE8CBC005D7FDE /* ShinobiCharts.framework */; };
 		2723AD171CAE8D08005D7FDE /* Chart+Styling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2723AD161CAE8D08005D7FDE /* Chart+Styling.swift */; };
+		2723AD191CAEAFDA005D7FDE /* CrosshairController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2723AD181CAEAFDA005D7FDE /* CrosshairController.swift */; };
 		27269BE31CAE805600FF2A06 /* Series+Styling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27269BE21CAE805600FF2A06 /* Series+Styling.swift */; };
+		274A2FFA1CBB9FD200418494 /* CrosshairPositionContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A2FF91CBB9FD200418494 /* CrosshairPositionContext.swift */; };
 		279AF1621CAE797200C2E0C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279AF1611CAE797200C2E0C0 /* AppDelegate.swift */; };
 		279AF1641CAE797200C2E0C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279AF1631CAE797200C2E0C0 /* ViewController.swift */; };
 		279AF1671CAE797200C2E0C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279AF1651CAE797200C2E0C0 /* Main.storyboard */; };
@@ -21,7 +23,9 @@
 /* Begin PBXFileReference section */
 		2723AD141CAE8CBC005D7FDE /* ShinobiCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShinobiCharts.framework; sourceTree = SOURCE_ROOT; };
 		2723AD161CAE8D08005D7FDE /* Chart+Styling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Chart+Styling.swift"; sourceTree = "<group>"; };
+		2723AD181CAEAFDA005D7FDE /* CrosshairController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrosshairController.swift; sourceTree = "<group>"; };
 		27269BE21CAE805600FF2A06 /* Series+Styling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Series+Styling.swift"; sourceTree = "<group>"; };
+		274A2FF91CBB9FD200418494 /* CrosshairPositionContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrosshairPositionContext.swift; sourceTree = "<group>"; };
 		279AF15E1CAE797200C2E0C0 /* ChartsOnTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartsOnTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		279AF1611CAE797200C2E0C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		279AF1631CAE797200C2E0C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +89,8 @@
 				27269BDD1CAE7F8400FF2A06 /* Frameworks */,
 				279AF1611CAE797200C2E0C0 /* AppDelegate.swift */,
 				279AF1631CAE797200C2E0C0 /* ViewController.swift */,
+				2723AD181CAEAFDA005D7FDE /* CrosshairController.swift */,
+				274A2FF91CBB9FD200418494 /* CrosshairPositionContext.swift */,
 				279AF1761CAE7BD200C2E0C0 /* ChartDatasource.swift */,
 				27269BE41CAE80C800FF2A06 /* Styling */,
 				279AF1651CAE797200C2E0C0 /* Main.storyboard */,
@@ -164,11 +170,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2723AD191CAEAFDA005D7FDE /* CrosshairController.swift in Sources */,
 				2723AD171CAE8D08005D7FDE /* Chart+Styling.swift in Sources */,
 				279AF1641CAE797200C2E0C0 /* ViewController.swift in Sources */,
 				279AF1621CAE797200C2E0C0 /* AppDelegate.swift in Sources */,
 				27269BE31CAE805600FF2A06 /* Series+Styling.swift in Sources */,
 				279AF1771CAE7BD200C2E0C0 /* ChartDatasource.swift in Sources */,
+				274A2FFA1CBB9FD200418494 /* CrosshairPositionContext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
