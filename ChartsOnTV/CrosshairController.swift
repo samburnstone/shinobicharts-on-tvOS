@@ -38,7 +38,7 @@ class CrosshairController: NSObject
         self.chart.addGestureRecognizer(panRecognizer)
     }
     
-    func toggleCrosshair(recognizer: UITapGestureRecognizer)
+    @objc private func toggleCrosshair(recognizer: UITapGestureRecognizer)
     {
         crosshairShowing = !crosshairShowing
         
@@ -53,7 +53,7 @@ class CrosshairController: NSObject
         chart.crosshair?.showAtPoint(pointLocationForDataPointAtIndex(crosshairPositionContext.dataIndex), inChart: chart)
     }
     
-    func moveCrosshair(recognizer: UIPanGestureRecognizer)
+    @objc private func moveCrosshair(recognizer: UIPanGestureRecognizer)
     {
         let xPos = recognizer.locationInView(chart).x
         
@@ -79,7 +79,7 @@ class CrosshairController: NSObject
         chart.crosshair?.moveToPoint(pointLocationForDataPointAtIndex(crosshairPositionContext.dataIndex), inChart: chart)
     }
     
-    func pointLocationForDataPointAtIndex(index: Int) -> CGPoint
+    private func pointLocationForDataPointAtIndex(index: Int) -> CGPoint
     {
         let dataPoint = chart.series[0].dataSeries.dataPoints[index]
         
