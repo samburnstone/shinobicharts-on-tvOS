@@ -11,6 +11,7 @@
 		2723AD171CAE8D08005D7FDE /* Chart+Styling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2723AD161CAE8D08005D7FDE /* Chart+Styling.swift */; };
 		2723AD191CAEAFDA005D7FDE /* CrosshairController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2723AD181CAEAFDA005D7FDE /* CrosshairController.swift */; };
 		274A2FFA1CBB9FD200418494 /* CrosshairPositionContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A2FF91CBB9FD200418494 /* CrosshairPositionContext.swift */; };
+		274A30001CBBA85400418494 /* TVChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A2FFF1CBBA85400418494 /* TVChart.swift */; };
 		279AF1621CAE797200C2E0C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279AF1611CAE797200C2E0C0 /* AppDelegate.swift */; };
 		279AF1641CAE797200C2E0C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279AF1631CAE797200C2E0C0 /* ViewController.swift */; };
 		279AF1671CAE797200C2E0C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279AF1651CAE797200C2E0C0 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		2723AD161CAE8D08005D7FDE /* Chart+Styling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Chart+Styling.swift"; sourceTree = "<group>"; };
 		2723AD181CAEAFDA005D7FDE /* CrosshairController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrosshairController.swift; sourceTree = "<group>"; };
 		274A2FF91CBB9FD200418494 /* CrosshairPositionContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrosshairPositionContext.swift; sourceTree = "<group>"; };
+		274A2FFF1CBBA85400418494 /* TVChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TVChart.swift; path = ../TVChart.swift; sourceTree = "<group>"; };
 		279AF15E1CAE797200C2E0C0 /* ChartsOnTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartsOnTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		279AF1611CAE797200C2E0C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		279AF1631CAE797200C2E0C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,10 +69,18 @@
 		274A2FFB1CBBA7A000418494 /* Gesture Handlers */ = {
 			isa = PBXGroup;
 			children = (
+				274A30011CBBB74800418494 /* Crosshair */,
+			);
+			name = "Gesture Handlers";
+			sourceTree = "<group>";
+		};
+		274A30011CBBB74800418494 /* Crosshair */ = {
+			isa = PBXGroup;
+			children = (
 				2723AD181CAEAFDA005D7FDE /* CrosshairController.swift */,
 				274A2FF91CBB9FD200418494 /* CrosshairPositionContext.swift */,
 			);
-			name = "Gesture Handlers";
+			name = Crosshair;
 			sourceTree = "<group>";
 		};
 		279AF1551CAE797200C2E0C0 = {
@@ -96,6 +106,7 @@
 				279AF1611CAE797200C2E0C0 /* AppDelegate.swift */,
 				279AF1631CAE797200C2E0C0 /* ViewController.swift */,
 				279AF1761CAE7BD200C2E0C0 /* ChartDatasource.swift */,
+				274A2FFF1CBBA85400418494 /* TVChart.swift */,
 				274A2FFB1CBBA7A000418494 /* Gesture Handlers */,
 				27269BE41CAE80C800FF2A06 /* Styling */,
 				279AF1651CAE797200C2E0C0 /* Main.storyboard */,
@@ -179,6 +190,7 @@
 				2723AD171CAE8D08005D7FDE /* Chart+Styling.swift in Sources */,
 				279AF1641CAE797200C2E0C0 /* ViewController.swift in Sources */,
 				279AF1621CAE797200C2E0C0 /* AppDelegate.swift in Sources */,
+				274A30001CBBA85400418494 /* TVChart.swift in Sources */,
 				279AF1771CAE7BD200C2E0C0 /* ChartDatasource.swift in Sources */,
 				274A2FFA1CBB9FD200418494 /* CrosshairPositionContext.swift in Sources */,
 			);
