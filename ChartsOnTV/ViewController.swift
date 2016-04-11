@@ -12,8 +12,9 @@ class ViewController: UIViewController
 {
     // Datasource is not retained by chart... therefore need to keep a reference to it ourself
     let datasource = ChartDatasource()
-    let chart: ShinobiChart = {
-        let chart = ShinobiChart(frame: CGRectZero)
+    
+    let chart: TVChart = {
+        let chart = TVChart(frame: CGRectZero)
         
         let xAxis = SChartCategoryAxis()
         xAxis.applyStyle()
@@ -26,6 +27,10 @@ class ViewController: UIViewController
         chart.yAxis = yAxis
         
         chart.applyStyle()
+        
+        let crosshair = SChartSeriesCrosshair()
+        crosshair.applyStyle()
+        chart.crosshair = crosshair
         
         return chart
     }()
