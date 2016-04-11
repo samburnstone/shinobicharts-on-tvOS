@@ -37,3 +37,22 @@ extension TVChart
         return true
     }
 }
+
+extension TVChart
+{
+    func zoomIn()
+    {
+        let newMinimum = xAxis!.range.minimum.doubleValue + 0.5
+        let newMaximum = xAxis!.range.maximum.doubleValue - 0.5
+        
+        xAxis?.setRange(SChartRange(minimum: newMinimum, andMaximum: newMaximum), withAnimation: true)
+    }
+    
+    func zoomOut()
+    {
+        let newMinimum = xAxis!.range.minimum.doubleValue - 0.5
+        let newMaximum = xAxis!.range.maximum.doubleValue + 0.5
+        
+        xAxis?.setRange(SChartRange(minimum: newMinimum, andMaximum: newMaximum), withAnimation: true)
+    }
+}

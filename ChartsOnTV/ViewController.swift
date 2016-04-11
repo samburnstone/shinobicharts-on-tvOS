@@ -47,10 +47,28 @@ class ViewController: UIViewController
         chart.translatesAutoresizingMaskIntoConstraints = false
         
         chart.leftAnchor.constraintEqualToAnchor(view.leftAnchor).active = true
-        chart.topAnchor.constraintEqualToAnchor(view.topAnchor).active = true
+        
+        let topLayout = NSLayoutConstraint(item: chart,
+                                           attribute: .Top,
+                                           relatedBy: .Equal,
+                                           toItem: view,
+                                           attribute: .Top,
+                                           multiplier: 1,
+                                           constant: 100)
+        view.addConstraint(topLayout)
+        
         chart.rightAnchor.constraintEqualToAnchor(view.rightAnchor).active = true
         chart.bottomAnchor.constraintEqualToAnchor(view.bottomAnchor).active = true
     }
 
+    @IBAction func zoomChartIn(sender: UIButton)
+    {
+        chart.zoomIn()
+    }
+    
+    @IBAction func zoomChartOut(sender: UIButton)
+    {
+        chart.zoomOut()
+    }
 }
 
