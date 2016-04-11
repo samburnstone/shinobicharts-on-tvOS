@@ -67,6 +67,15 @@
 			name = Styling;
 			sourceTree = "<group>";
 		};
+		274A2FFB1CBBA7A000418494 /* Gesture Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				2723AD181CAEAFDA005D7FDE /* CrosshairController.swift */,
+				274A2FF91CBB9FD200418494 /* CrosshairPositionContext.swift */,
+			);
+			name = "Gesture Handlers";
+			sourceTree = "<group>";
+		};
 		279AF1551CAE797200C2E0C0 = {
 			isa = PBXGroup;
 			children = (
@@ -89,9 +98,8 @@
 				27269BDD1CAE7F8400FF2A06 /* Frameworks */,
 				279AF1611CAE797200C2E0C0 /* AppDelegate.swift */,
 				279AF1631CAE797200C2E0C0 /* ViewController.swift */,
-				2723AD181CAEAFDA005D7FDE /* CrosshairController.swift */,
-				274A2FF91CBB9FD200418494 /* CrosshairPositionContext.swift */,
 				279AF1761CAE7BD200C2E0C0 /* ChartDatasource.swift */,
+				274A2FFB1CBBA7A000418494 /* Gesture Handlers */,
 				27269BE41CAE80C800FF2A06 /* Styling */,
 				279AF1651CAE797200C2E0C0 /* Main.storyboard */,
 				279AF1681CAE797200C2E0C0 /* Assets.xcassets */,
