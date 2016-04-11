@@ -32,6 +32,7 @@ class ChartDatasource: NSObject, SChartDatasource
     {
         let series = SChartColumnSeries()
         series.applyStyling()
+        series.crosshairEnabled = true
         return series;
     }
     
