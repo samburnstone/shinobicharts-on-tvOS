@@ -28,3 +28,22 @@ extension SChartAxis
 
     }
 }
+
+extension SChartSeriesCrosshair
+{
+    func applyStyle()
+    {
+        style.defaultFont = UIFont.boldSystemFontOfSize(30)
+        style.defaultTextColor = .whiteColor()
+    }
+}
+
+extension SChartColumnSeries
+{
+    func applyStyling()
+    {
+        let columnColor = UIColor(red:0.93, green:0.78, blue:0.34, alpha:1.00)
+        style().areaColor = columnColor
+        style().areaColorGradient = columnColor
+    }
+}
