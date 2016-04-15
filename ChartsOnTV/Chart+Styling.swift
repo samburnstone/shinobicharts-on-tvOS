@@ -10,7 +10,7 @@ import Foundation
 
 extension ShinobiChart
 {
-    func applyStyle()
+    func applyStyling()
     {
         canvasAreaBackgroundColor = .clearColor()
         plotAreaBackgroundColor = .clearColor()
@@ -20,7 +20,7 @@ extension ShinobiChart
 
 extension SChartAxis
 {
-    func applyStyle()
+    func applyStyling()
     {
         style.lineWidth = 0
         style.majorTickStyle.labelFont = UIFont.boldSystemFontOfSize(30)
@@ -31,7 +31,7 @@ extension SChartAxis
 
 extension SChartSeriesCrosshair
 {
-    func applyStyle()
+    func applyStyling()
     {
         style.defaultFont = UIFont.boldSystemFontOfSize(30)
         style.defaultTextColor = .whiteColor()

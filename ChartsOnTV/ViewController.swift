@@ -27,7 +27,6 @@ class ViewController: UIViewController
     }
 }
 
-
 extension ViewController
 {
     func configureAndStyleHistoricalLanguagePopularityChart()
@@ -35,16 +34,16 @@ extension ViewController
         historicalLanguagePopularityChart.datasource = datasources[0]
         
         let xAxis = SChartDateTimeAxis()
-        xAxis.applyStyle()
+        xAxis.applyStyling()
         
         let yAxis = SChartNumberAxis()
         yAxis.rangePaddingHigh = 5
-        yAxis.applyStyle()
+        yAxis.applyStyling()
         
         historicalLanguagePopularityChart.xAxis = xAxis
         historicalLanguagePopularityChart.yAxis = yAxis
         
-        historicalLanguagePopularityChart.applyStyle()
+        historicalLanguagePopularityChart.applyStyling()
         
         historicalLanguagePopularityChart.crosshair = nil
         
