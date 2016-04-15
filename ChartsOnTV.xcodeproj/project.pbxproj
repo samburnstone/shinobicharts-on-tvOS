@@ -19,6 +19,7 @@
 		279AF1731CAE79F900C2E0C0 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 279AF1721CAE79F900C2E0C0 /* libc++.tbd */; };
 		279AF1771CAE7BD200C2E0C0 /* ChartDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279AF1761CAE7BD200C2E0C0 /* ChartDatasource.swift */; };
 		27EBF1361CC142700070349B /* OSVersionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EBF1351CC142700070349B /* OSVersionDataSource.swift */; };
+		27EBF1381CC14A690070349B /* UIView+Parallax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EBF1371CC14A690070349B /* UIView+Parallax.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		279AF1721CAE79F900C2E0C0 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		279AF1761CAE7BD200C2E0C0 /* ChartDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartDatasource.swift; sourceTree = "<group>"; };
 		27EBF1351CC142700070349B /* OSVersionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSVersionDataSource.swift; sourceTree = "<group>"; };
+		27EBF1371CC14A690070349B /* UIView+Parallax.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Parallax.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		279AF1601CAE797200C2E0C0 /* ChartsOnTV */ = {
 			isa = PBXGroup;
 			children = (
+				27EBF1371CC14A690070349B /* UIView+Parallax.swift */,
 				27EBF1321CC1114F0070349B /* Data Sources */,
 				27269BDD1CAE7F8400FF2A06 /* Frameworks */,
 				27EBF1341CC136250070349B /* Chart */,
@@ -211,6 +214,7 @@
 				279AF1621CAE797200C2E0C0 /* AppDelegate.swift in Sources */,
 				274A30001CBBA85400418494 /* TVChart.swift in Sources */,
 				279AF1771CAE7BD200C2E0C0 /* ChartDatasource.swift in Sources */,
+				27EBF1381CC14A690070349B /* UIView+Parallax.swift in Sources */,
 				274A2FFA1CBB9FD200418494 /* CrosshairPositionContext.swift in Sources */,
 				27EBF1361CC142700070349B /* OSVersionDataSource.swift in Sources */,
 			);

@@ -27,6 +27,7 @@ class TVChart: ShinobiChart
     private func commonInit()
     {
         crosshairController = CrosshairController(chart: self)
+        self.clipsToBounds = false // Disable clipping so we get shadow effect
     }
 }
 
@@ -35,6 +36,45 @@ extension TVChart
     override func canBecomeFocused() -> Bool
     {
         return true
+    }
+    
+    // Called when transitioning to or from chart
+    override func didUpdateFocusInContext(context: UIFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator)
+    {
+        super.didUpdateFocusInContext(context, withAnimationCoordinator: coordinator)
+        
+        if context.nextFocusedView == self
+        {
+            // Add focus
+            self.becomeFocusedUsingAnimationCoordinator(coordinator)
+            self.addParallaxMotionEffects()
+        }
+        else
+        {
+            // Remove focus
+            self.resignFocusUsingAnimationCoordinator(coordinator)
+            self.motionEffects = []
+        }
+    }
+    
+    func becomeFocusedUsingAnimationCoordinator(coordinator: UIFocusAnimationCoordinator) {
+        coordinator.addCoordinatedAnimations({ () -> Void in
+            self.transform = CGAffineTransformMakeScale(1.1, 1.1)
+            self.layer.shadowColor = UIColor.blackColor().CGColor
+            self.layer.shadowOffset = CGSizeMake(10, 10)
+            self.layer.shadowOpacity = 0.3
+            self.layer.shadowRadius = 10
+        }, completion: nil)
+    }
+    
+    func resignFocusUsingAnimationCoordinator(coordinator: UIFocusAnimationCoordinator) {
+        coordinator.addCoordinatedAnimations({ () -> Void in
+            self.transform = CGAffineTransformIdentity
+            self.layer.shadowColor = nil
+            self.layer.shadowOffset = CGSizeZero
+            self.layer.shadowOpacity = 0
+            self.layer.shadowRadius = 0
+        }, completion: nil)
     }
 }
 
