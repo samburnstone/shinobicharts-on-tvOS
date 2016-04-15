@@ -51,6 +51,7 @@
                     </view>
                     <connections>
                         <outlet property="historicalLanguagePopularityChart" destination="HTr-ew-aTx" id="9ea-Zs-cTJ"/>
+                        <outlet property="osVersionBreakdownChart" destination="qBF-Yl-ofo" id="s7W-Kz-g9Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
