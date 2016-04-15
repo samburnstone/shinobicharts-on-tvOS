@@ -32,7 +32,7 @@ extension ViewController
     {
         historicalLanguagePopularityChart.datasource = datasource
         
-        let xAxis = SChartCategoryAxis()
+        let xAxis = SChartDateTimeAxis()
         xAxis.applyStyle()
         
         let yAxis = SChartNumberAxis()
