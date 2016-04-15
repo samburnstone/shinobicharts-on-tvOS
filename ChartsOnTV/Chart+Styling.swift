@@ -23,7 +23,7 @@ extension SChartAxis
     func applyStyle()
     {
         style.lineWidth = 0
-        style.majorTickStyle.labelFont = UIFont.boldSystemFontOfSize(40)
+        style.majorTickStyle.labelFont = UIFont.boldSystemFontOfSize(30)
         style.majorTickStyle.labelColor = .whiteColor()
 
     }

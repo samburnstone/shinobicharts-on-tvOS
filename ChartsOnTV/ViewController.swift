@@ -13,8 +13,24 @@ class ViewController: UIViewController
     // Datasource is not retained by chart... therefore need to keep a reference to it ourself
     let datasource = ChartDatasource()
     
-    let chart: TVChart = {
-        let chart = TVChart(frame: CGRectZero)
+    @IBOutlet var historicalLanguagePopularityChart: ShinobiChart!
+    
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        
+        view.backgroundColor = UIColor(red:0.30, green:0.33, blue:0.40, alpha:1.00)
+        
+        configureAndStyleHistoricalLanguagePopularityChart()
+    }
+}
+
+
+extension ViewController
+{
+    func configureAndStyleHistoricalLanguagePopularityChart()
+    {
+        historicalLanguagePopularityChart.datasource = datasource
         
         let xAxis = SChartCategoryAxis()
         xAxis.applyStyle()
@@ -23,52 +39,16 @@ class ViewController: UIViewController
         yAxis.rangePaddingHigh = 5
         yAxis.applyStyle()
         
-        chart.xAxis = xAxis
-        chart.yAxis = yAxis
+        historicalLanguagePopularityChart.xAxis = xAxis
+        historicalLanguagePopularityChart.yAxis = yAxis
         
-        chart.applyStyle()
+        historicalLanguagePopularityChart.applyStyle()
         
         let crosshair = SChartSeriesCrosshair()
         crosshair.applyStyle()
-        chart.crosshair = crosshair
+        historicalLanguagePopularityChart.crosshair = crosshair
         
-        return chart
-    }()
-    
-    override func viewDidLoad()
-    {
-        super.viewDidLoad()
-        
-        view.backgroundColor = UIColor(red:0.30, green:0.33, blue:0.40, alpha:1.00)
-        
-        chart.datasource = datasource
-        view.addSubview(chart)
-        
-        chart.translatesAutoresizingMaskIntoConstraints = false
-        
-        chart.leftAnchor.constraintEqualToAnchor(view.leftAnchor).active = true
-        
-        let topLayout = NSLayoutConstraint(item: chart,
-                                           attribute: .Top,
-                                           relatedBy: .Equal,
-                                           toItem: view,
-                                           attribute: .Top,
-                                           multiplier: 1,
-                                           constant: 100)
-        view.addConstraint(topLayout)
-        
-        chart.rightAnchor.constraintEqualToAnchor(view.rightAnchor).active = true
-        chart.bottomAnchor.constraintEqualToAnchor(view.bottomAnchor).active = true
-    }
-
-    @IBAction func zoomChartIn(sender: UIButton)
-    {
-        chart.zoomIn()
-    }
-    
-    @IBAction func zoomChartOut(sender: UIButton)
-    {
-        chart.zoomOut()
+        historicalLanguagePopularityChart.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.2)
     }
 }
 
