@@ -44,9 +44,7 @@ extension ViewController
         
         historicalLanguagePopularityChart.applyStyle()
         
-        let crosshair = SChartSeriesCrosshair()
-        crosshair.applyStyle()
-        historicalLanguagePopularityChart.crosshair = crosshair
+        historicalLanguagePopularityChart.crosshair = nil
         
         historicalLanguagePopularityChart.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.2)
     }
