@@ -104,11 +104,9 @@
 			children = (
 				27EBF1321CC1114F0070349B /* Data Sources */,
 				27269BDD1CAE7F8400FF2A06 /* Frameworks */,
+				27EBF1341CC136250070349B /* Chart */,
 				279AF1611CAE797200C2E0C0 /* AppDelegate.swift */,
 				279AF1631CAE797200C2E0C0 /* ViewController.swift */,
-				274A2FFF1CBBA85400418494 /* TVChart.swift */,
-				274A2FFB1CBBA7A000418494 /* Gesture Handlers */,
-				27269BE41CAE80C800FF2A06 /* Styling */,
 				279AF1651CAE797200C2E0C0 /* Main.storyboard */,
 				279AF1681CAE797200C2E0C0 /* Assets.xcassets */,
 				279AF16A1CAE797200C2E0C0 /* Info.plist */,
@@ -122,6 +120,16 @@
 				279AF1761CAE7BD200C2E0C0 /* ChartDatasource.swift */,
 			);
 			name = "Data Sources";
+			sourceTree = "<group>";
+		};
+		27EBF1341CC136250070349B /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				274A2FFF1CBBA85400418494 /* TVChart.swift */,
+				274A2FFB1CBBA7A000418494 /* Gesture Handlers */,
+				27269BE41CAE80C800FF2A06 /* Styling */,
+			);
+			name = Chart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
