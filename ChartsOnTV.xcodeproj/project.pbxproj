@@ -18,6 +18,7 @@
 		279AF1691CAE797200C2E0C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279AF1681CAE797200C2E0C0 /* Assets.xcassets */; };
 		279AF1731CAE79F900C2E0C0 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 279AF1721CAE79F900C2E0C0 /* libc++.tbd */; };
 		279AF1771CAE7BD200C2E0C0 /* ChartDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279AF1761CAE7BD200C2E0C0 /* ChartDatasource.swift */; };
+		27EBF1361CC142700070349B /* OSVersionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EBF1351CC142700070349B /* OSVersionDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		279AF16A1CAE797200C2E0C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		279AF1721CAE79F900C2E0C0 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		279AF1761CAE7BD200C2E0C0 /* ChartDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartDatasource.swift; sourceTree = "<group>"; };
+		27EBF1351CC142700070349B /* OSVersionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSVersionDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				279AF1761CAE7BD200C2E0C0 /* ChartDatasource.swift */,
+				27EBF1351CC142700070349B /* OSVersionDataSource.swift */,
 			);
 			name = "Data Sources";
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				274A30001CBBA85400418494 /* TVChart.swift in Sources */,
 				279AF1771CAE7BD200C2E0C0 /* ChartDatasource.swift in Sources */,
 				274A2FFA1CBB9FD200418494 /* CrosshairPositionContext.swift in Sources */,
+				27EBF1361CC142700070349B /* OSVersionDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

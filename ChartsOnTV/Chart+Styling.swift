@@ -46,3 +46,19 @@ extension SChartLineSeries
         style().lineWidth = 5
     }
 }
+
+extension SChartDonutSeries
+{
+    func applyStyling()
+    {
+        style().flavourColors = [
+            UIColor(red:0.97, green:0.32, blue:0.20, alpha:1.00),
+            UIColor(red:0.98, green:0.78, blue:0.32, alpha:1.00),
+            UIColor(red:0.35, green:0.59, blue:0.79, alpha:1.00),
+            UIColor(red:0.45, green:0.84, blue:0.66, alpha:1.00),
+            UIColor(red:0.59, green:0.44, blue:0.47, alpha:1.00)
+        ]
+        
+        style().labelFont = UIFont.boldSystemFontOfSize(20)
+    }
+}
