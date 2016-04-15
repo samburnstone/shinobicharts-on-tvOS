@@ -13,8 +13,8 @@ class ViewController: UIViewController
     // Datasource is not retained by chart... therefore need to keep a reference to it ourself
     let datasources: [SChartDatasource] = [ChartDatasource(), OSVersionDatasource()]
     
-    @IBOutlet var historicalLanguagePopularityChart: TVChart!
-    @IBOutlet weak var osVersionBreakdownChart: TVChart!
+    @IBOutlet var historicalLanguagePopularityChart: SummaryChartView!
+    @IBOutlet weak var osVersionBreakdownChart: SummaryChartView!
     
     override func viewDidLoad()
     {

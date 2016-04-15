@@ -20,6 +20,7 @@
 		279AF1771CAE7BD200C2E0C0 /* ChartDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279AF1761CAE7BD200C2E0C0 /* ChartDatasource.swift */; };
 		27EBF1361CC142700070349B /* OSVersionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EBF1351CC142700070349B /* OSVersionDataSource.swift */; };
 		27EBF1381CC14A690070349B /* UIView+Parallax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EBF1371CC14A690070349B /* UIView+Parallax.swift */; };
+		27EBF13A1CC150E50070349B /* SummaryChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EBF1391CC150E50070349B /* SummaryChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		279AF1761CAE7BD200C2E0C0 /* ChartDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartDatasource.swift; sourceTree = "<group>"; };
 		27EBF1351CC142700070349B /* OSVersionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSVersionDataSource.swift; sourceTree = "<group>"; };
 		27EBF1371CC14A690070349B /* UIView+Parallax.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Parallax.swift"; sourceTree = "<group>"; };
+		27EBF1391CC150E50070349B /* SummaryChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				274A2FFF1CBBA85400418494 /* TVChart.swift */,
+				27EBF1391CC150E50070349B /* SummaryChartView.swift */,
 				274A2FFB1CBBA7A000418494 /* Gesture Handlers */,
 				27269BE41CAE80C800FF2A06 /* Styling */,
 			);
@@ -214,6 +217,7 @@
 				279AF1621CAE797200C2E0C0 /* AppDelegate.swift in Sources */,
 				274A30001CBBA85400418494 /* TVChart.swift in Sources */,
 				279AF1771CAE7BD200C2E0C0 /* ChartDatasource.swift in Sources */,
+				27EBF13A1CC150E50070349B /* SummaryChartView.swift in Sources */,
 				27EBF1381CC14A690070349B /* UIView+Parallax.swift in Sources */,
 				274A2FFA1CBB9FD200418494 /* CrosshairPositionContext.swift in Sources */,
 				27EBF1361CC142700070349B /* OSVersionDataSource.swift in Sources */,
