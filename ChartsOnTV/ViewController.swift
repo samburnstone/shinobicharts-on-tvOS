@@ -11,9 +11,9 @@ import UIKit
 class ViewController: UIViewController
 {
     // Datasource is not retained by chart... therefore need to keep a reference to it ourself
-    let datasource = ChartDatasource()
+    let datasources: [SChartDatasource] = [ChartDatasource(), OSVersionDatasource()]
     
-    @IBOutlet var historicalLanguagePopularityChart: ShinobiChart!
+    @IBOutlet var historicalLanguagePopularityChart: TVChart!
     @IBOutlet weak var osVersionBreakdownChart: TVChart!
     
     override func viewDidLoad()
@@ -31,7 +31,7 @@ extension ViewController
 {
     func configureAndStyleHistoricalLanguagePopularityChart()
     {
-        historicalLanguagePopularityChart.datasource = datasource
+        historicalLanguagePopularityChart.datasource = datasources[0]
         
         let xAxis = SChartDateTimeAxis()
         xAxis.applyStyle()
