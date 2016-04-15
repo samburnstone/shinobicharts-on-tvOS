@@ -23,6 +23,7 @@ class ViewController: UIViewController
         view.backgroundColor = UIColor(red:0.30, green:0.33, blue:0.40, alpha:1.00)
         
         configureAndStyleHistoricalLanguagePopularityChart()
+        configureAndStyleOSVersionBreakdownChart()
     }
 }
 
