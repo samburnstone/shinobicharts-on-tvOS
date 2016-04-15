@@ -14,6 +14,7 @@ class ViewController: UIViewController
     let datasource = ChartDatasource()
     
     @IBOutlet var historicalLanguagePopularityChart: ShinobiChart!
+    @IBOutlet weak var osVersionBreakdownChart: TVChart!
     
     override func viewDidLoad()
     {
@@ -47,6 +48,19 @@ extension ViewController
         historicalLanguagePopularityChart.crosshair = nil
         
         historicalLanguagePopularityChart.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.2)
+    }
+}
+
+extension ViewController
+{
+    func configureAndStyleOSVersionBreakdownChart()
+    {
+        // set relevant datasource once created
+        osVersionBreakdownChart.datasource = datasources[1]
+        
+        osVersionBreakdownChart.applyStyling()
+        
+        osVersionBreakdownChart.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.2)
     }
 }
 
