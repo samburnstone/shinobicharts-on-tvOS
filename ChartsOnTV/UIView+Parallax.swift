@@ -36,7 +36,7 @@ extension UIView {
     yPan.minimumRelativeValue = -panValue
     yPan.maximumRelativeValue = panValue
     
-    motionGroup.motionEffects = [xTilt]
+    motionGroup.motionEffects = [xTilt, yTilt, xPan, yPan]
     self.addMotionEffect( motionGroup )
   }
 }
