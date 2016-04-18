@@ -7,6 +7,8 @@
 //
 class SummaryChartView: TVChart
 {
+    var onChartSelection: ((chart: ShinobiChart) -> (Void))?
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     
@@ -21,6 +23,6 @@ extension SummaryChartView
 {
     func chartSelected()
     {
-        print("Selected chart")
+        onChartSelection?(chart: self)
     }
 }
