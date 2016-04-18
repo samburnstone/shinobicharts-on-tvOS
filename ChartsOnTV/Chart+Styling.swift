@@ -14,7 +14,7 @@ extension ShinobiChart
     {
         canvasAreaBackgroundColor = .clearColor()
         plotAreaBackgroundColor = .clearColor()
-        backgroundColor = .clearColor()
+        backgroundColor = UIColor(red:0.22, green:0.24, blue:0.29, alpha:1.00)
     }
 }
 

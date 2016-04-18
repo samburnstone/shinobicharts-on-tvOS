@@ -47,7 +47,6 @@ extension ViewController
         
         historicalLanguagePopularityChart.crosshair = nil
         
-        historicalLanguagePopularityChart.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.2)
     }
 }
 
@@ -60,7 +59,6 @@ extension ViewController
         
         osVersionBreakdownChart.applyStyling()
         
-        osVersionBreakdownChart.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.2)
     }
 }
 
