@@ -58,7 +58,7 @@ extension TVChart
     }
     
     func becomeFocusedUsingAnimationCoordinator(coordinator: UIFocusAnimationCoordinator) {
-        coordinator.addCoordinatedAnimations({ () -> Void in
+        coordinator.addCoordinatedAnimations({
             self.transform = CGAffineTransformMakeScale(1.1, 1.1)
             self.layer.shadowColor = UIColor.blackColor().CGColor
             self.layer.shadowOffset = CGSizeMake(10, 10)
@@ -68,7 +68,7 @@ extension TVChart
     }
     
     func resignFocusUsingAnimationCoordinator(coordinator: UIFocusAnimationCoordinator) {
-        coordinator.addCoordinatedAnimations({ () -> Void in
+        coordinator.addCoordinatedAnimations({
             self.transform = CGAffineTransformIdentity
             self.layer.shadowColor = nil
             self.layer.shadowOffset = CGSizeZero
