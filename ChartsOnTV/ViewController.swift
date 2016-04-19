@@ -47,6 +47,7 @@ extension ViewController
         
         historicalLanguagePopularityChart.crosshair = nil
         
+        historicalLanguagePopularityChart.onChartSelection = self.chartSelectionHandler
     }
 }
 
@@ -59,6 +60,24 @@ extension ViewController
         
         osVersionBreakdownChart.applyStyling()
         
+        osVersionBreakdownChart.onChartSelection = self.chartSelectionHandler
+    }
+}
+
+extension ViewController
+{
+    func chartSelectionHandler(chart: ShinobiChart)
+    {
+        performSegueWithIdentifier("showChartDetail", sender: chart)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        guard let detailChartViewController = segue.destinationViewController as? DetailChartViewController,
+            chart = sender as? ShinobiChart else { return }
+        
+        detailChartViewController.title = "Show data from \(chart.datasource)"
+        detailChartViewController.chartDatasource = chart.datasource
     }
 }
 
