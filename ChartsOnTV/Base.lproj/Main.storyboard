@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="n3o-7j-bHY">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -49,12 +49,74 @@
                             <constraint firstAttribute="trailingMargin" secondItem="x64-Sf-Aqp" secondAttribute="trailing" constant="20" id="iSM-SE-B5W"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="bh7-iy-mtm"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="historicalLanguagePopularityChart" destination="HTr-ew-aTx" id="9ea-Zs-cTJ"/>
                         <outlet property="osVersionBreakdownChart" destination="qBF-Yl-ofo" id="s7W-Kz-g9Y"/>
+                        <segue destination="AL9-GG-Owy" kind="showDetail" identifier="showChartDetail" id="gDm-pg-26a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2697" y="476"/>
+        </scene>
+        <!--Detail Chart View Controller-->
+        <scene sceneID="xkd-xk-YBC">
+            <objects>
+                <viewController id="AL9-GG-Owy" customClass="DetailChartViewController" customModule="ChartsOnTV" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1kF-Hm-Ii2"/>
+                        <viewControllerLayoutGuide type="bottom" id="20Q-dS-PI9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FHW-rM-TOx">
+                        <rect key="frame" x="0.0" y="0.0" width="1285" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q78-W6-Tge">
+                                <rect key="frame" x="590" y="28" width="105" height="57"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xOr-1n-5RR" customClass="TVChart" customModule="ChartsOnTV" customModuleProvider="target">
+                                <rect key="frame" x="20" y="85" width="1245" height="995"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="q78-W6-Tge" firstAttribute="top" secondItem="1kF-Hm-Ii2" secondAttribute="bottom" constant="28" id="VaC-1x-7B7"/>
+                            <constraint firstItem="20Q-dS-PI9" firstAttribute="top" secondItem="xOr-1n-5RR" secondAttribute="bottom" id="b0i-5u-TmS"/>
+                            <constraint firstItem="xOr-1n-5RR" firstAttribute="top" secondItem="q78-W6-Tge" secondAttribute="bottom" id="e3r-rg-jTy"/>
+                            <constraint firstItem="xOr-1n-5RR" firstAttribute="leading" secondItem="FHW-rM-TOx" secondAttribute="leadingMargin" id="hrt-sc-ceH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xOr-1n-5RR" secondAttribute="trailing" id="lNh-oF-wz8"/>
+                            <constraint firstItem="q78-W6-Tge" firstAttribute="centerX" secondItem="FHW-rM-TOx" secondAttribute="centerX" id="nyI-1W-ZRa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailChart" destination="xOr-1n-5RR" id="Cdq-49-R6f"/>
+                        <outlet property="titleLabel" destination="q78-W6-Tge" id="bxv-05-myM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c8J-er-nK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5005" y="503"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JDo-FO-rdu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="n3o-7j-bHY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3NY-4I-67l">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tRx-aX-fFj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZcT-Rk-gtB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="565" y="476"/>
         </scene>

@@ -12,6 +12,7 @@
 		2723AD191CAEAFDA005D7FDE /* CrosshairController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2723AD181CAEAFDA005D7FDE /* CrosshairController.swift */; };
 		274A2FFA1CBB9FD200418494 /* CrosshairPositionContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A2FF91CBB9FD200418494 /* CrosshairPositionContext.swift */; };
 		274A30001CBBA85400418494 /* TVChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A2FFF1CBBA85400418494 /* TVChart.swift */; };
+		2777056A1CC5499C0002C7BB /* DetailChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277705691CC5499C0002C7BB /* DetailChartViewController.swift */; };
 		279AF1621CAE797200C2E0C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279AF1611CAE797200C2E0C0 /* AppDelegate.swift */; };
 		279AF1641CAE797200C2E0C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279AF1631CAE797200C2E0C0 /* ViewController.swift */; };
 		279AF1671CAE797200C2E0C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279AF1651CAE797200C2E0C0 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 		2723AD181CAEAFDA005D7FDE /* CrosshairController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrosshairController.swift; sourceTree = "<group>"; };
 		274A2FF91CBB9FD200418494 /* CrosshairPositionContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrosshairPositionContext.swift; sourceTree = "<group>"; };
 		274A2FFF1CBBA85400418494 /* TVChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TVChart.swift; path = ../TVChart.swift; sourceTree = "<group>"; };
+		277705691CC5499C0002C7BB /* DetailChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailChartViewController.swift; sourceTree = "<group>"; };
 		279AF15E1CAE797200C2E0C0 /* ChartsOnTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartsOnTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		279AF1611CAE797200C2E0C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		279AF1631CAE797200C2E0C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				27EBF1341CC136250070349B /* Chart */,
 				279AF1611CAE797200C2E0C0 /* AppDelegate.swift */,
 				279AF1631CAE797200C2E0C0 /* ViewController.swift */,
+				277705691CC5499C0002C7BB /* DetailChartViewController.swift */,
 				279AF1651CAE797200C2E0C0 /* Main.storyboard */,
 				279AF1681CAE797200C2E0C0 /* Assets.xcassets */,
 				279AF16A1CAE797200C2E0C0 /* Info.plist */,
@@ -214,6 +217,7 @@
 				2723AD191CAEAFDA005D7FDE /* CrosshairController.swift in Sources */,
 				2723AD171CAE8D08005D7FDE /* Chart+Styling.swift in Sources */,
 				279AF1641CAE797200C2E0C0 /* ViewController.swift in Sources */,
+				2777056A1CC5499C0002C7BB /* DetailChartViewController.swift in Sources */,
 				279AF1621CAE797200C2E0C0 /* AppDelegate.swift in Sources */,
 				274A30001CBBA85400418494 /* TVChart.swift in Sources */,
 				279AF1771CAE7BD200C2E0C0 /* ChartDatasource.swift in Sources */,
